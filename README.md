@@ -45,6 +45,26 @@ It helps you build your own stable icon link library and keep everything inside 
 
 ---
 
+## 🍴 Use After Fork
+
+After forking this repository, complete this one-time setup in your fork:
+
+1. Go to `Settings -> Pages`
+2. Set `Build and deployment -> Source` to `GitHub Actions`
+3. Go to `Settings -> Actions -> General`
+4. Set `Workflow permissions` to `Read and write permissions`
+5. Open `Actions`, rerun `Deploy Pages` once
+
+Then your site URL will be:
+
+- `https://<your-user-or-org>.github.io/<your-fork-repo>/`
+
+Notes:
+- If `Deploy Pages` shows `Get Pages site failed` or `Resource not accessible by integration`, it usually means Pages is not enabled yet or workflow write permission is not granted.
+- If your account or organization uses a custom domain, the final URL may be that domain instead of `github.io`.
+
+---
+
 ## 🔗 Link Usage
 
 - Stable version (recommended):

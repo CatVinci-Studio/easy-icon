@@ -45,6 +45,26 @@ Easy Icon 是一个全基于 GitHub 的快速私有 icon 管理仓库。
 
 ---
 
+## 🍴 Fork 后如何使用
+
+Fork 本仓库后，请在你自己的仓库里完成一次初始化：
+
+1. 进入 `Settings -> Pages`
+2. 在 `Build and deployment -> Source` 选择 `GitHub Actions`
+3. 进入 `Settings -> Actions -> General`
+4. 将 `Workflow permissions` 设为 `Read and write permissions`
+5. 打开 `Actions`，手动重跑一次 `Deploy Pages`
+
+完成后，站点地址通常为：
+
+- `https://<你的用户名或组织>.github.io/<你的 fork 仓库名>/`
+
+说明：
+- 如果 `Deploy Pages` 报 `Get Pages site failed` 或 `Resource not accessible by integration`，通常是 Pages 尚未启用，或 Workflow 写权限未开启。
+- 如果你的账号或组织配置了自定义域名，最终地址可能显示为该域名，而不是 `github.io`。
+
+---
+
 ## 🔗 引用方法
 
 - 稳定版本（推荐）：
